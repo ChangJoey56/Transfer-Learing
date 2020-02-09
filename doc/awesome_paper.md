@@ -5,10 +5,19 @@
      - Assume that the loss of transferability mainly stems from the intrinsic limitation of the architecture design of DNNs
      - Propose a Transferable Normalization Techniques for Transfer Learning
 ### 1.1.2 Multi Domain
+
 ### 1.1.3 Feature Alignment
+* AAAI-20 [Discriminative Adversarial Domain Adaptation](https://arxiv.org/abs/1911.12036)
+     - Solve the limitation of aligning the joint distributions in domain-adversarial training
+     - Propose an integrated category and domain classifier balancing between category and domain adaptation for any instance
+* CVPR-19 [Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss](https://arxiv.org/pdf/1903.03215) [[official code]](https://github.com/roysubhankar/dwt-domain-adaptation)
+     - Propose the feature whitening for domain alignment and the Min-Entropy Consensus loss for unlabeled target domain adaptation
 * ICCV-19 [Learning Discriminative Features for Unsupervised Domain Adaptation](https://arxiv.org/abs/1910.05562) [[official code]](https://github.com/postBG/DTA.pytorch)
      - Aim at considering the tasks while matching the distribution cross domain
      - By exploiting adversarial dropout to learn strongly discriminative features by enforcing the cluster assumption
+* CVPR-19 [Contrastive Adaptation Network for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Kang_Contrastive_Adaptation_Network_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf) 
+     - Solve the misalignment caused by neglecting the class information
+     - Propose a new metric for intra-class domain discrepancy and inter-class domain discrepancy
 * CVPR-18 [Aligning Domains using Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sankaranarayanan_Generate_to_Adapt_CVPR_2018_paper.pdf) 
      - Aim at aligning feature distributions cross domain in a learned joint feature space
      - By inducing a symbiotic relationship between the learned embedding and a generative adversarial
@@ -48,10 +57,22 @@ network.
 * CVPR-18 [Importance Weighted Adversarial Nets for Partial Domain Adaptation](https://arxiv.org/abs/1803.09210)
      - Aim at reducing the distribution with unidentical label spaces
      - Propose a novel adversarial nets-based partial domain adaptation method to identify the source samples that are potentially from the outlier classes
+     
 ### 1.1.5 Multiple Distribution
 * CVPR-18 [Boosting Domain Adaptation by Discovering Latent Domains](https://arxiv.org/abs/1805.01386)
      - Assume that most datasets can be regarded as mixtures of multiple domains
      - Propose a novel CNN archtecture to discover latent domains automatically
+     
+ ### 1.1.6 Layer-wsie DA
+ * CVPR-19 [Domain-Specific Batch Normalization for Unsupervised Domain Adaptation]( https://arxiv.org/pdf/1906.03950) 
+     - Aim to adapt both domains by specializing batch normalization layers in CNN
+     - Propose separate batch normalization layers for both domains
+* ICCV-19 [An Adaptive Feature Norm Approach for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_ICCV_2019/papers/Xu_Larger_Norm_More_Transferable_An_Adaptive_Feature_Norm_Approach_for_ICCV_2019_paper.pdf) [[official code]](https://github.com/jihanyang/AFN)
+     - Assume that the erratic discrimination of the target domain mainly stems from its much smaller feature
+norms
+     - Solve the drastic model degradation on the target task
+     - Propose a novel parameter-free Adaptive Feature Norm approach
+     
 ### 1.1.4 Applications
 #### 1.1.4.1 Semantic Segmentation
 * CVPR-19 [Pixel-level Domain Transfer with Cross-Domain Consistency](https://zpascal.net/cvpr2019/Chen_CrDoCo_Pixel-Level_Domain_Transfer_With_Cross-Domain_Consistency_CVPR_2019_paper.pdf)
