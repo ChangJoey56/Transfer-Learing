@@ -10,8 +10,6 @@
 * AAAI-20 [Discriminative Adversarial Domain Adaptation](https://arxiv.org/abs/1911.12036)
      - Solve the limitation of aligning the joint distributions in domain-adversarial training
      - Propose an integrated category and domain classifier balancing between category and domain adaptation for any instance
-* CVPR-19 [Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss](https://arxiv.org/pdf/1903.03215) [[official code]](https://github.com/roysubhankar/dwt-domain-adaptation)
-     - Propose the feature whitening for domain alignment and the Min-Entropy Consensus loss for unlabeled target domain adaptation
 * ICCV-19 [Learning Discriminative Features for Unsupervised Domain Adaptation](https://arxiv.org/abs/1910.05562) [[official code]](https://github.com/postBG/DTA.pytorch)
      - Aim at considering the tasks while matching the distribution cross domain
      - By exploiting adversarial dropout to learn strongly discriminative features by enforcing the cluster assumption
@@ -64,6 +62,8 @@ network.
      - Propose a novel CNN archtecture to discover latent domains automatically
      
  ### 1.1.6 Layer-wsie DA
+ * CVPR-19 [Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss](https://arxiv.org/pdf/1903.03215) [[official code]](https://github.com/roysubhankar/dwt-domain-adaptation)
+     - Propose the feature whitening for domain alignment and the Min-Entropy Consensus loss for unlabeled target domain adaptation
  * CVPR-19 [Domain-Specific Batch Normalization for Unsupervised Domain Adaptation]( https://arxiv.org/pdf/1906.03950) 
      - Aim to adapt both domains by specializing batch normalization layers in CNN
      - Propose separate batch normalization layers for both domains
