@@ -1,7 +1,6 @@
 
 ### 清华大学
-* 龙明盛 教授 论文列表 http://ise.thss.tsinghua.edu.cn/~mlong/  
-  - 实验室GitHub https://github.com/thuml
+* 龙明盛 教授 论文列表 http://ise.thss.tsinghua.edu.cn/~mlong/  实验室GitHub https://github.com/thuml
 * 朱军 教授 论文列表 http://bigml.cs.tsinghua.edu.cn/~jun/index.shtml
 
 ### 北京大学
@@ -19,7 +18,6 @@
 ### 重庆大学
 * 张磊 教授 论文列表 http://www.leizhang.tk/publications%20and%20codes.html
 
-
 ### 中科院 自动化所智能感知与计算研究中心
 * 赫然 研究员 个人主页 http://people.ucas.ac.cn/~0019861?language=en
 
@@ -32,10 +30,10 @@
 ### 中国地址大学
 * 马丽 副教授 遥感图像迁移 论文列表 http://jidian.cug.edu.cn/info/1143/1376.htm
 
-### University of Pittsburgh
+### 匹茲堡大學（美国）
 * Hongchang Gao Ph.D. candidate 论文列表 https://www.pitt.edu/~hog10/index.html
 
-### Nanyang Technological University
+### 南洋理工大学
 * Yiping Ke 助理教授 论文列表 https://keyiping.wixsite.com/index/publications
 
 ### 浙江大学
@@ -45,13 +43,13 @@
 * 李晶晶 副教授 https://lijin118.github.io/
 * 钱沄涛 教授 高光谱成像 论文列表 https://person.zju.edu.cn/en/0098296#888249 
 
-### Univ Trento 
+### 特伦特大学（意大利） 
 * Bruzzone, Lorenzo 高光谱成像 论文列表 https://webapps.unitn.it/du/en/Persona/PER0004714/Pubblicazioni
 
-### Northeastern Univ 
+### 东北大学（美国） 
 * SMILE lab,（社交媒体分析+人机交互+高阶图像和视频理解) https://web.northeastern.edu/smilelab/
 
-### Indiana University-Purdue University
+### 印第安納大學與普渡大學印第安納波利斯聯合分校（美国）
 * 丁正明 助理教授 论文列表 http://allanding.net/
 
 ### 中山大学 数学学院（科学计算与计算机应用系）
