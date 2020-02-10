@@ -24,8 +24,8 @@
 ### 中科院 计算技术研究所
 * 陈益强 研究员 个人主页 http://people.ucas.ac.cn/~yqchen#%20349860
 
-### 亚洲微软研究院
-* 王晋东 研究院 论文列表 http://jd92.wang/ 开源的GitHub项目 https://github.com/jindongwang
+### 微软亚洲研究院
+* 王晋东 研究员 论文列表 http://jd92.wang/ 开源的GitHub项目 https://github.com/jindongwang
 
 ### 中国地质大学
 * 马丽 副教授 遥感图像迁移 论文列表 http://jidian.cug.edu.cn/info/1143/1376.htm
