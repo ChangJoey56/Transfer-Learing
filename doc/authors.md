@@ -55,7 +55,7 @@
 ### 中山大学 数学学院（科学计算与计算机应用系）
 * 任传贤 副教授 个人主页 http://www.scholat.com/renchx.cn
 
-### 西北工业大学 Center for OPTical IMagery Analysis and Learning
+### 西北工业大学 (光学影像分析与学习中心)
 * 王琦 教授 https://crabwq.github.io/
 
 ### 南京大学 LAMDA团队
