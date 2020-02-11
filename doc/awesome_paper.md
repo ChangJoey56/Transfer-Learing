@@ -20,10 +20,12 @@
      - Aim at aligning feature distributions cross domain in a learned joint feature space
      - By inducing a symbiotic relationship between the learned embedding and a generative adversarial
 network.
+
 #### 1.1.3.1 Distribution Distance-based Methods
 * CVPR-19 [A Deep Max-Margin Gaussian Process Approach](http://openaccess.thecvf.com/content_CVPR_2019/papers/Kim_Unsupervised_Visual_Domain_Adaptation_A_Deep_Max-Margin_Gaussian_Process_Approach_CVPR_2019_paper.pdf)
      - Introduce GP to minimize the maximum discrepancy of predictors
      - Easier to solve than previous methods based on adversarial minimax optimization
+     
 #### 1.1.3.2 Adversarial Methods
 * AAAI-20 [Adversarial-Learned Loss for Domain Adaptation](https://arxiv.org/pdf/2001.01046) [[official code]](https://github.com/ZJULearning/ALDA)
      - Aim at considering the target discriminative features by combining the self-training methods and domain-adversarial methods
@@ -41,14 +43,19 @@ network.
 * CVPR-17 [Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2017/papers/Bousmalis_Unsupervised_Pixel-Level_Domain_CVPR_2017_paper.pdf)
      - Aim at capturing a transformation in the pixel level
      - By exploiting a content–similarity loss
+     
 #### 1.1.3.3 Attention Alignment
 * ECCV-18 [Deep Adversarial Attention Alignment for Unsupervised Domain Adaptation: the Benefit of Target Expectation Maximization](https://arxiv.org/abs/1801.10068)
      - Aim at transfering knowledge in all the convolutional layers through attention alignment
      - Assume that the discriminative regions in an image are relatively invariant to image style changes
-#### 1.1.3.4 Pseudo-Labeling for Target Data
+     
+#### 1.1.3.4 Class-awared for Target Data
 * AAAI-20 [Unsupervised Domain Adaptation via Structured Prediction Based Selective Pseudo-Labeling](https://arxiv.org/abs/1911.07982)
      - Propose a novel selective pseudo-labeling strategy based on structured prediction
      - Assume that samples in the target domain are well clustered within the deep feature space
+* CVPR-19 [Transferrable Prototypical Networks for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Pan_Transferrable_Prototypical_Networks_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf)
+     - Propose a new DA by learning an embedding space and perform classification via a remold of the distances to the prototype of each class.
+     - Assume that the score distributions predicted by prototypes separately on source and target data are similar.  
 
 
 ### 1.1.4 Partial Domain Adaptation
