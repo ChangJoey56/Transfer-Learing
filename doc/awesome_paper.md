@@ -7,12 +7,6 @@
 ### 1.1.2 Multi Domain
 
 ### 1.1.3 Feature Alignment
-* AAAI-20 [Discriminative Adversarial Domain Adaptation](https://arxiv.org/abs/1911.12036)
-     - Solve the limitation of aligning the joint distributions in domain-adversarial training
-     - Propose an integrated category and domain classifier balancing between category and domain adaptation for any instance
-* ICCV-19 [Learning Discriminative Features for Unsupervised Domain Adaptation](https://arxiv.org/abs/1910.05562) [[official code]](https://github.com/postBG/DTA.pytorch)
-     - Aim at considering the tasks while matching the distribution cross domain
-     - By exploiting adversarial dropout to learn strongly discriminative features by enforcing the cluster assumption
 * CVPR-19 [Contrastive Adaptation Network for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Kang_Contrastive_Adaptation_Network_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf) 
      - Solve the misalignment caused by neglecting the class information
      - Propose a new metric for intra-class domain discrepancy and inter-class domain discrepancy
@@ -20,6 +14,10 @@
      - Aim at aligning feature distributions cross domain in a learned joint feature space
      - By inducing a symbiotic relationship between the learned embedding and a generative adversarial
 network.
+* TPMI-18 [Aggregating Randomized Clustering-Promoting Invariant Projections for Domain Adaptation](https://ieeexplore.ieee.org/document/8353356) 
+     - Considering intra-domain structure 
+     - Develop a ‘sampling-andfusion’ framework , where various randomized coupled domain subsets are sampled for multiple projections.
+
 
 #### 1.1.3.1 Distribution Distance-based Methods
 * CVPR-19 [A Deep Max-Margin Gaussian Process Approach](http://openaccess.thecvf.com/content_CVPR_2019/papers/Kim_Unsupervised_Visual_Domain_Adaptation_A_Deep_Max-Margin_Gaussian_Process_Approach_CVPR_2019_paper.pdf)
@@ -53,10 +51,15 @@ network.
 * AAAI-20 [Unsupervised Domain Adaptation via Structured Prediction Based Selective Pseudo-Labeling](https://arxiv.org/abs/1911.07982)
      - Propose a novel selective pseudo-labeling strategy based on structured prediction
      - Assume that samples in the target domain are well clustered within the deep feature space
+* AAAI-20 [Discriminative Adversarial Domain Adaptation](https://arxiv.org/abs/1911.12036)
+     - Solve the limitation of aligning the joint distributions in domain-adversarial training
+     - Propose an integrated category and domain classifier balancing between category and domain adaptation for any instance
 * CVPR-19 [Transferrable Prototypical Networks for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Pan_Transferrable_Prototypical_Networks_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf)
      - Propose a new DA by learning an embedding space and perform classification via a remold of the distances to the prototype of each class.
      - Assume that the score distributions predicted by prototypes separately on source and target data are similar.  
-
+* ICCV-19 [Learning Discriminative Features for Unsupervised Domain Adaptation](https://arxiv.org/abs/1910.05562) [[official code]](https://github.com/postBG/DTA.pytorch)
+     - Aim at considering the tasks while matching the distribution cross domain
+     - By exploiting adversarial dropout to learn strongly discriminative features by enforcing the cluster assumption
 
 ### 1.1.4 Partial Domain Adaptation
 * CVPR-18 [Importance Weighted Adversarial Nets for Partial Domain Adaptation](https://arxiv.org/abs/1803.09210)
