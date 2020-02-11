@@ -1,19 +1,19 @@
 
 ### 清华大学
-* 龙明盛 教授 论文列表 http://ise.thss.tsinghua.edu.cn/~mlong/  实验室GitHub https://github.com/thuml
+* 龙明盛 教授 论文列表 http://ise.thss.tsinghua.edu.cn/~mlong  实验室GitHub https://github.com/thuml
 * 朱军 教授 论文列表 http://bigml.cs.tsinghua.edu.cn/~jun/index.shtml
 
 ### 北京大学
-* 王立威 教授 论文列表 http://www.liweiwang-pku.com/
+* 王立威 教授 论文列表 http://www.liweiwang-pku.com
 
 ### 卡内基梅隆大学（美国）
-* 赵晗（博士生在读） 论文列表 https://www.cs.cmu.edu/~hzhao1/
+* 赵晗（博士生在读） 论文列表 https://www.cs.cmu.edu/~hzhao1
 
 ### 波士顿大学（美国）
 * Saenko 教授 论文列表 http://ai.bu.edu/projects.html
 
 ### 苏黎世联邦理工学院（瑞士）
-* 李文 教授 论文列表 http://www.vision.ee.ethz.ch/~liwenw/
+* 李文 教授 论文列表 http://www.vision.ee.ethz.ch/~liwenw
 
 ### 重庆大学
 * 张磊 教授 论文列表 http://www.leizhang.tk/publications%20and%20codes.html
@@ -47,22 +47,21 @@
 * Bruzzone, Lorenzo 高光谱成像 论文列表 https://webapps.unitn.it/du/en/Persona/PER0004714/Pubblicazioni
 
 ### 东北大学（美国） 
-* SMILE lab,（社交媒体分析+人机交互+高阶图像和视频理解) https://web.northeastern.edu/smilelab/
+* SMILE lab,（社交媒体分析+人机交互+高阶图像和视频理解) https://web.northeastern.edu/smilelab
 
 ### 印第安納大學與普渡大學印第安納波利斯聯合分校（美国）
-* 丁正明 助理教授 论文列表 http://allanding.net/
+* 丁正明 助理教授 论文列表 http://allanding.net
 
 ### 中山大学 数学学院（科学计算与计算机应用系）
 * 任传贤 副教授 个人主页 http://www.scholat.com/renchx.cn
 
 ### 西北工业大学 (光学影像分析与学习中心)
-* 王琦 教授 https://crabwq.github.io/
+* 王琦 教授 https://crabwq.github.io
 
 ### 南京大学 LAMDA团队
-* 周志华 教授 http://www.lamda.nju.edu.cn/CH.MainPage.ashx?AspxAutoDetectCookieSupport=1
-
+* 周志华 教授 http://www.lamda.nju.edu.cn
 ### 武汉大学 SIGMA团队
-* 杜博 教授 http://sigma.whu.edu.cn/
+* 杜博 教授 http://sigma.whu.edu.cn
 
 
 
