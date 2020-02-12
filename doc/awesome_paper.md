@@ -58,17 +58,27 @@ network.
      - Assume that the posterior distribution of target samples is similar to that of corresponding samples with same categories.
      - Propose a label correlation transfer algorithm by inducing KL distance to measure the proximity between source posterior distribution and target posterior distribution   
 
-* KNOSY-19 [Generating target data with class labels for unsupervised domain adaptation](https://www.sciencedirect.com/science/article/pii/S0950705119300772)
-     - To implement discriminative representations of target domain, regardless of lacking labeled target data
-     - Disentangle the class and the style codes of the target generator and generate Target samples with given class labels
-     - By enforcing high mutual information between the class code and the generated images, which is contained the high level layers of the target generator and the source generator.
-
 * CVPR-19 [Transferrable Prototypical Networks for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Pan_Transferrable_Prototypical_Networks_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf)
      - Propose a new DA by learning an embedding space and perform classification via a remold of the distances to the prototype of each class.
      - Assume that the score distributions predicted by prototypes separately on source and target data are similar.  
 * ICCV-19 [Learning Discriminative Features for Unsupervised Domain Adaptation](https://arxiv.org/abs/1910.05562) [[official code]](https://github.com/postBG/DTA.pytorch)
      - Aim at considering the tasks while matching the distribution cross domain
      - By exploiting adversarial dropout to learn strongly discriminative features by enforcing the cluster assumption
+
+* KNOSY-19 [Generating target data with class labels for unsupervised domain adaptation](https://www.sciencedirect.com/science/article/pii/S0950705119300772)
+     - To implement discriminative representations of target domain, regardless of lacking labeled target data
+     - Disentangle the class and the style codes of the target generator and generate Target samples with given class labels
+     - By enforcing high mutual information between the class code and the generated images, which is contained the high level layers of the target generator and the source generator
+
+* TMM-19 [Deep Multi-Modality Adversarial Networks for Unsupervised Domain Adaptation](https://ieeexplore.ieee.org/abstract/document/8656504/)
+     - To learn semantic multimodality representations
+     - Apply stacked attention and adversarial trainning 
+     - Employ multi-channel constraint to capture fine-grained categories knowledge and enhance the discrimination of target samples 
+
+* TPR-19 [Exploring uncertainty in pseudo-label guided unsupervised domain adaptation](https://www.sciencedirect.com/science/article/pii/S0031320319302997)
+     - To solve that the posterior probabilities (uncertainties) from  target data are ignored
+     - Progressively increase the number of target training samples  
+     - A triplet-wise instance-to-center margin is further maximized to push apart target instances and source class centers of different classes and bring closer them of the same class
 
 ### 1.1.4 Partial Domain Adaptation
 * CVPR-18 [Importance Weighted Adversarial Nets for Partial Domain Adaptation](https://arxiv.org/abs/1803.09210)
