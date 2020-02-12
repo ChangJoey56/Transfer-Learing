@@ -54,6 +54,15 @@ network.
 * AAAI-20 [Discriminative Adversarial Domain Adaptation](https://arxiv.org/abs/1911.12036)
      - Solve the limitation of aligning the joint distributions in domain-adversarial training
      - Propose an integrated category and domain classifier balancing between category and domain adaptation for any instance
+* TPR-20 [Deep Conditional Adaptation Networks and Label Correlation](https://www.sciencedirect.com/science/article/pii/S0031320319303735)
+     - Assume that the posterior distribution of target samples is similar to that of corresponding samples with same categories.
+     - Propose a label correlation transfer algorithm by inducing KL distance to measure the proximity between source posterior distribution and target posterior distribution   
+
+* KNOSY-19 [Generating target data with class labels for unsupervised domain adaptation](https://www.sciencedirect.com/science/article/pii/S0950705119300772)
+     - To implement discriminative representations of target domain, regardless of lacking labeled target data
+     - Disentangle the class and the style codes of the target generator and generate Target samples with given class labels
+     - By enforcing high mutual information between the class code and the generated images, which is contained the high level layers of the target generator and the source generator.
+
 * CVPR-19 [Transferrable Prototypical Networks for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Pan_Transferrable_Prototypical_Networks_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf)
      - Propose a new DA by learning an embedding space and perform classification via a remold of the distances to the prototype of each class.
      - Assume that the score distributions predicted by prototypes separately on source and target data are similar.  
@@ -74,6 +83,7 @@ network.
  ### 1.1.6 Layer-wsie DA
  * CVPR-19 [Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss](https://arxiv.org/pdf/1903.03215) [[official code]](https://github.com/roysubhankar/dwt-domain-adaptation)
      - Propose the feature whitening for domain alignment and the Min-Entropy Consensus loss for unlabeled target domain adaptation
+     - Introduce MSE-LOSS which merges both the entropy and the consistency loss, and assume that the predictions for the same image should be similar 
  * CVPR-19 [Domain-Specific Batch Normalization for Unsupervised Domain Adaptation]( https://arxiv.org/pdf/1906.03950) 
      - Aim to adapt both domains by specializing batch normalization layers in CNN
      - Propose separate batch normalization layers for both domains
