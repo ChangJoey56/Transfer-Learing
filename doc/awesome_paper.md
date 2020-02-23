@@ -1,19 +1,23 @@
-# 1. Deep Transfer Learning
-## 1.1 Domain Adaptation
-### 1.1.1 Single Domain 
+# 1.Conference/Journal
+## 1.1 Single Domain 
 * NIPS-19 [Towards Improving Transferability of Deep Neural Networks](https://papers.nips.cc/paper/8470-transferable-normalization-towards-improving-transferability-of-deep-neural-networks) [[official code]](http://github.com/thuml/TransNorm)
      - Assume that the loss of transferability mainly stems from the intrinsic limitation of the architecture design of DNNs
      - Propose a Transferable Normalization Techniques for Transfer Learning
-### 1.1.2 Multi Domain
-
 ### 1.1.3 Feature Alignment
 * CVPR-19 [Contrastive Adaptation Network for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_CVPR_2019/papers/Kang_Contrastive_Adaptation_Network_for_Unsupervised_Domain_Adaptation_CVPR_2019_paper.pdf) 
      - Solve the misalignment caused by neglecting the class information
      - Propose a new metric for intra-class domain discrepancy and inter-class domain discrepancy
+ 
+ * ICDM-19 [Transfer Learning with Dynamic Adversarial Adaptation Network](https://arxiv.org/abs/1909.08184) 
+     - Aim at aligning both the marginal (global) and conditional (local) distributions cross domains
+     - By inducing global and local A-distance to construct the weight between these two distributions
+     
 * CVPR-18 [Aligning Domains using Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sankaranarayanan_Generate_to_Adapt_CVPR_2018_paper.pdf) 
      - Aim at aligning feature distributions cross domain in a learned joint feature space
      - By inducing a symbiotic relationship between the learned embedding and a generative adversarial
 network.
+
+
 * TPMI-18 [Aggregating Randomized Clustering-Promoting Invariant Projections for Domain Adaptation](https://ieeexplore.ieee.org/document/8353356) 
      - Considering intra-domain structure 
      - Develop a ‘sampling-andfusion’ framework , where various randomized coupled domain subsets are sampled for multiple projections.
@@ -47,7 +51,7 @@ network.
      - Aim at transfering knowledge in all the convolutional layers through attention alignment
      - Assume that the discriminative regions in an image are relatively invariant to image style changes
      
-#### 1.1.3.4 Class-awared for Target Data
+#### 1.1.3.4 Class-wised for Target Data
 * AAAI-20 [Unsupervised Domain Adaptation via Structured Prediction Based Selective Pseudo-Labeling](https://arxiv.org/abs/1911.07982)
      - Propose a novel selective pseudo-labeling strategy based on structured prediction
      - Assume that samples in the target domain are well clustered within the deep feature space
@@ -79,18 +83,33 @@ network.
      - To solve that the posterior probabilities (uncertainties) from  target data are ignored
      - Progressively increase the number of target training samples  
      - A triplet-wise instance-to-center margin is further maximized to push apart target instances and source class centers of different classes and bring closer them of the same class
+  
+  * MM-19 [ Joint Adversarial Domain Adaptation](https://dl.acm.org/doi/10.1145/3343031.3351070)
+     - To solve class-wise mismatch across domains
+     - By minimizing the disagreement between two distinct task-specific classifiers’ predictions to synthesize target features near the support of source class-wisely.
+     
+ 
+#### 1.1.3.5 Multi-representation DA
+    - Considering that single structure or representations may only contain partial info like the saturation, brightness, and hue information. 
+    - Align the distributions of multiple representations extracted by a hybrid structure named Inception Adaptation Module (IAM). 
+    
+ 
 
-### 1.1.4 Partial Domain Adaptation
+## 1.2 Partial Domain Adaptation
 * CVPR-18 [Importance Weighted Adversarial Nets for Partial Domain Adaptation](https://arxiv.org/abs/1803.09210)
      - Aim at reducing the distribution with unidentical label spaces
      - Propose a novel adversarial nets-based partial domain adaptation method to identify the source samples that are potentially from the outlier classes
      
-### 1.1.5 Multiple Distribution
+## 1.3 Multiple Distribution
 * CVPR-18 [Boosting Domain Adaptation by Discovering Latent Domains](https://arxiv.org/abs/1805.01386)
      - Assume that most datasets can be regarded as mixtures of multiple domains
      - Propose a novel CNN archtecture to discover latent domains automatically
+
+* TKDE-18 [Structure-Preserved Unsupervised Domain Adaptation](https://par.nsf.gov/servlets/purl/10065320)
+     - The whole structure of source domains is preserved to guide the target structure learning
+    
      
- ### 1.1.6 Layer-wsie DA
+ ## 1.4 Layer-wsie DA
  * CVPR-19 [Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss](https://arxiv.org/pdf/1903.03215) [[official code]](https://github.com/roysubhankar/dwt-domain-adaptation)
      - Propose the feature whitening for domain alignment and the Min-Entropy Consensus loss for unlabeled target domain adaptation
      - Introduce MSE-LOSS which merges both the entropy and the consistency loss, and assume that the predictions for the same image should be similar 
@@ -102,13 +121,37 @@ network.
 norms
      - Solve the drastic model degradation on the target task
      - Propose a novel parameter-free Adaptive Feature Norm approach
-     
-### 1.1.4 Applications
-#### 1.1.4.1 Semantic Segmentation
+
+ ## 1.5 Open-set DA
+ * arXiv-19 [Known-class Aware Self-ensemble for Open Set Domain Adaptation](https://arxiv.org/abs/1905.01068v1) 
+     - To identify the known and unknown classes from target data by encouraging a low cross-entropy for known classes and a high entropy 
+ from unknown classes.
+
+ ## 1.6 Semi-supervised DA
+  * ICCV-19 [Semi-supervised Domain Adaptation via Minimax Entropy](https://arxiv.org/abs/1905.01068v1) 
+     - Propose a classification layer that computes the features’ similarity to estimated prototypes (representatives of each class).
+     - Adaptation is done by maximizing the conditional entropy of unlabeled target data with respect to the classifier and minizing it with respect to the feature encoder.
+ 
+ ## 1.7 Compressing DA
+  * JMLC-19 [Transfer channel pruning for compressing deep domain adaptation models](https://link.springer.com/chapter/10.1007/978-3-030-26142-9_23) 
+     - First approach to accelerate the UDA by prunning less important channels.
+     - Introduce Taylor expansion to judge the importance of channels
+
+
+## 1.* Applications
+### 1.*.1 Semantic Segmentation
 * CVPR-19 [Pixel-level Domain Transfer with Cross-Domain Consistency](https://zpascal.net/cvpr2019/Chen_CrDoCo_Pixel-Level_Domain_Transfer_With_Cross-Domain_Consistency_CVPR_2019_paper.pdf)
      - Aim at capturing pixel-level domain shifts
      - Assume that translated images cross domains differ in styles
      - By exploiting a cross-domain consistency loss motivated by image-to-image translation methods
+
+
+# 2.Tutorial & Survey
+[Transfer Adaptation Learning: A Decade Survey](https://arxiv.org/pdf/1903.04687.pdf), Lei Z, et al. (arXiv 19)
+
+* TCYB-18 [Robust Graph-Based Semisupervised Learning for Noisy Labeled Data via Maximum Correntropy Criterion](https://ieeexplore.ieee.org/document/8303753)
+     - Propose to employ maximum correntropy criterion to suppress labeling noise, which can effectively handle outliers and non-
+Gaussian noise.
 
 
 
