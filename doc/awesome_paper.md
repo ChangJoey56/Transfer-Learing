@@ -110,12 +110,18 @@ network.
     
      
  ## 1.4 Layer-wsie DA
+ 
+  * NIPS-19 [Transferable Normalization: Towards Improving Transferability of Deep Neural Networks](https://papers.nips.cc/paper/8470-transferable-normalization-towards-improving-transferability-of-deep-neural-networks) [[official code]](https://github.com/thuml/TransNorm)
+     - Propose TransNorm in place of existing normalization techniques
+ 
  * CVPR-19 [Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss](https://arxiv.org/pdf/1903.03215) [[official code]](https://github.com/roysubhankar/dwt-domain-adaptation)
      - Propose the feature whitening for domain alignment and the Min-Entropy Consensus loss for unlabeled target domain adaptation
      - Introduce MSE-LOSS which merges both the entropy and the consistency loss, and assume that the predictions for the same image should be similar 
+     
  * CVPR-19 [Domain-Specific Batch Normalization for Unsupervised Domain Adaptation]( https://arxiv.org/pdf/1906.03950) 
      - Aim to adapt both domains by specializing batch normalization layers in CNN
      - Propose separate batch normalization layers for both domains
+     
 * ICCV-19 [An Adaptive Feature Norm Approach for Unsupervised Domain Adaptation](http://openaccess.thecvf.com/content_ICCV_2019/papers/Xu_Larger_Norm_More_Transferable_An_Adaptive_Feature_Norm_Approach_for_ICCV_2019_paper.pdf) [[official code]](https://github.com/jihanyang/AFN)
      - Assume that the erratic discrimination of the target domain mainly stems from its much smaller feature
 norms
