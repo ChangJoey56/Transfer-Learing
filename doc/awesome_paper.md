@@ -7,9 +7,24 @@
 
 ### 1.1.3 Feature Alignment
 
+* AAAI-20 [Bi-Directional Generation for Unsupervised Domain Adaptation
+](https://arxiv.org/abs/2002.04869) 
+     - To preserve intrinsic data structure
+     - Introduce consistent classifiers interpolating two intermediate domains to bridge source and target domains
+
+* AAAI-20 [Correlation-aware Adversarial Domain Adaptation and Generalization](https://www.sciencedirect.com/science/article/pii/S003132031930425X) 
+     - Consider correlation alignment along with adversarial learning
+     - By incorporating the correlation alignment module along with adversarial learning
+
+* TIP-19 [Locality Preserving Joint Transfer for Domain Adaptation](https://ieeexplore.ieee.org/abstract/document/8746823/) 
+     - The manifold structures of samples can be preserved by taking the local consistency between samples into consideration
+     - Introduce two Laplacian graph terms, one for each domain, by deploying the Fisher criterion (samples from same class stay close, while samples from different class stay far from each other)
+
 * TPMI-18 [Aggregating Randomized Clustering-Promoting Invariant Projections for Domain Adaptation](https://ieeexplore.ieee.org/document/8353356) 
      - Considering intra-domain structure 
      - Develop a ‘sampling-andfusion’ framework , where various randomized coupled domain subsets are sampled for multiple projections.
+
+
 
 
 #### 1.1.3.1 Distribution Distance-based Methods
