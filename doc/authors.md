@@ -60,10 +60,12 @@
 
 ### 南京大学 LAMDA团队
 * 周志华 教授 http://www.lamda.nju.edu.cn
+
 ### 武汉大学 SIGMA团队
 * 杜博 教授 http://sigma.whu.edu.cn
 
-
+### 墨尔本大学 数学与统计学院
+* 宫明明 助理教授 https://mingming-gong.github.io/publications.html
 
 
 
