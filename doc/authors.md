@@ -67,6 +67,8 @@
 ### 墨尔本大学 数学与统计学院
 * 宫明明 助理教授 https://mingming-gong.github.io/publications.html
 
+### 佐治亚理工学院 交互计算学院
+* Judy Hoffman 助理教授 https://www.cc.gatech.edu/~judy/
 
 
 
